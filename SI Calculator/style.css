@@ -1,0 +1,71 @@
+.container{
+    
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    border-radius: 10px;
+    width:100%;
+    padding:20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    max-width:400px;
+  }
+  body{
+    background: linear-gradient(45deg, #ff6b6b, #7c5ad9);
+    animation: gradientBG 5s infinite;
+    background-size: 400% 400%;
+    width: 300px;
+    height:100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left:40%;
+  }
+    @keyframes gradientBG {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+  
+  h1{
+    font-size:24px;
+    text-align: center;
+    margin-bottom:20px;
+  }
+  .form-group{
+    margin-bottom:10px;
+  }
+  .font-group label{
+    display: block;
+    margin-bottom:5px;
+    font-weight:bold;
+  }
+  .form-group input{
+    width:95%;
+    padding:10px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:5px;
+  }
+  .calculate-btn{
+    padding:10px 20px;
+    background-color:#2e5656;
+    color:white;
+    border:none;
+    font-weight:bolder;
+    border-radius:5px;
+    cursor:pointer;
+    
+  }
+  .result{
+    font-size:18px;
+    text-align:center;
+    margin-top: 10px;
+  }
+  .calculate-btn:hover{
+    background-color:#d28f51;
+  }

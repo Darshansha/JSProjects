@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI Calculator</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script> 
+ </head>
+<body>
+    <div class="container">
+        <center>
+        <h2>SI Calculator</h2>
+        </center>
+        <form>
+
+            <div class="form-group">
+                <label for="principalAmount">Principal Amount:</label>
+                <br><br>
+                <input id="principalAmount" type="number"></input>
+                <br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="interestRate">Interest Rate:</label>
+                <br><br>
+                <input id="interestRate" type="number"></input>
+                <br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="tenure">Tenure(years):</label>
+                <br><br>
+                <input id="tenure" type="number"></input>
+                <br><br>
+            </div>
+
+            <button class="calculate-btn" id="calculateBtn" type="button" onclick="calculateMaturityAmount()">CALCULATE</button>
+            <br>
+            <p><span id="maturityAmount"></span></p>
+        </form>
+        </div>
+</body>
+</html>
